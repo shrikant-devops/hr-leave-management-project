@@ -6,10 +6,10 @@ spring:
     name: hr-leave-management
 
   datasource:
-    url: jdbc:mysql://database-1.crus6wwka0x8.ap-south-2.rds.amazonaws.com:3306/mysql?useSSL=true&serverTimezone=Asia/Kolkata&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://database-1.crus6wwka0x8.ap-south-2.rds.amazonaws.com:3306/hr_leave_db?useSSL=true&serverTimezone=Asia/Kolkata&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: admin
-    password: 7000150409
+    password: ${DB_PASSWORD}
 
   jpa:
     hibernate:

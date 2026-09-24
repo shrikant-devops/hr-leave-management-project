@@ -1,7 +1,7 @@
 com/hrms/leave/entity/Role.class
 com/hrms/leave/service/LeaveService.class
-com/hrms/leave/config/SecurityConfig.class
 com/hrms/leave/config/DataSeeder.class
+com/hrms/leave/config/SecurityConfig.class
 com/hrms/leave/entity/LeaveType.class
 com/hrms/leave/entity/LeaveStatus.class
 com/hrms/leave/controller/DashboardController.class
