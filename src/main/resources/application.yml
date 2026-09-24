@@ -4,11 +4,13 @@ server:
 spring:
   application:
     name: hr-leave-management
+
   datasource:
-    url: jdbc:h2:file:./data/hrleavedb;AUTO_SERVER=TRUE
-    driver-class-name: org.h2.Driver
-    username: sa
-    password: ""
+    url: jdbc:mysql://database-1.crus6wwka0x8.ap-south-2.rds.amazonaws.com:3306/mysql?useSSL=true&serverTimezone=Asia/Kolkata&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+    password: 7000150409
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -17,10 +19,8 @@ spring:
     properties:
       hibernate:
         format_sql: true
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
+        dialect: org.hibernate.dialect.MySQLDialect
+
   thymeleaf:
     cache: false
 
